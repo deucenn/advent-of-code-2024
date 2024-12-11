@@ -31,6 +31,7 @@ function blink(stones, count) {
         let left = currentStone.slice(0, half);
         let right = currentStone.slice(half);
 
+        // Deleted leading zeros. If string is empty, add a 0
         left = left === "" ? "0" : left.replace(/^0+/, "") || "0";
         right = right === "" ? "0" : right.replace(/^0+/, "") || "0";
 
